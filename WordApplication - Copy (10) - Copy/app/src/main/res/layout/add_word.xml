@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="#00FFA2">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Enter word..."
+        android:background="@drawable/inputtext"
+        android:id="@+id/editword"
+        android:padding="7dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Enter meaning..."
+        android:background="@drawable/inputtext"
+        android:id="@+id/editmeaning"
+        android:padding="7dp"
+        android:layout_below="@id/editword"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="10dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Enter sentence..."
+        android:layout_below="@id/editmeaning"
+        android:background="@drawable/inputtext"
+        android:id="@+id/editsentence"
+        android:padding="7dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="20dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        android:id="@+id/addbtn"
+        android:onClick="addbtn"
+        android:background="#ecf0f1"
+        android:layout_alignTop="@+id/deletebtn"
+        android:layout_toLeftOf="@+id/deletebtn"
+        android:layout_toStartOf="@+id/deletebtn"
+        android:layout_marginRight="37dp"
+        android:layout_marginEnd="37dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        android:id="@+id/deletebtn"
+        android:onClick="deletebtn"
+        android:background="#ecf0f1"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/editsentence"
+        android:layout_alignEnd="@+id/editsentence"
+        android:layout_marginRight="48dp"
+        android:layout_marginEnd="48dp" />
+
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="navigate"
+            android:onClick="navigatebtn"
+            android:id="@+id/navigatebtn"
+            android:layout_gravity="center_horizontal"
+            android:background="#ecf0f1"
+        android:layout_below="@+id/addbtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="56dp" />
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/show"
+        android:layout_weight="0.65"
+        android:layout_marginBottom="44dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/editsentence"
+        android:layout_alignEnd="@+id/editsentence"
+        android:visibility="gone" />
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/add_word_ad_unit_id">
+    </com.google.android.gms.ads.AdView>
+
+
+</RelativeLayout>

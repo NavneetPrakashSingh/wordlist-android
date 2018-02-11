@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Welcome to wordList, we have added some of the most common words used in everyday life and you can parse the whole list of words by using the &apos;Word List&apos; button below, we have tried to make it as useful as possible for you , hope you enjoy it !"
+        android:id="@+id/textView17"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#2c3e50"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="2dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Word List"
+        android:id="@+id/button"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:background="#ff2c3e50"
+        android:textColor="#ecf0f1"
+        android:padding="7dp"
+
+        android:onClick="firstScreenClick" />
+</LinearLayout>

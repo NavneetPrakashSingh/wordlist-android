@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C38EC7">
+
+
+
+
+
+
+    <TextView android:text="Word List : Random Zone"
+        android:layout_width="fill_parent"
+        android:id="@+id/textview2"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="28sp"
+        android:background="#8e44ad"
+        android:textColor="#ecf0f1"
+        android:paddingBottom="5dp" />
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/horizontalScrollView"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+
+    <LinearLayout
+
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+        android:id="@+id/linearLayout"
+        android:layout_below="@+id/textview2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#8e44ad">
+
+
+    <Button
+    android:layout_width="100dp"
+    android:layout_height="wrap_content"
+    android:text="Random Word"
+    android:id="@+id/button"
+    android:onClick="clickme"
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true"
+        android:background="#9b59b6"
+        android:textColor="#ecf0f1"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Add to new Word"
+        android:id="@+id/button2"
+        android:onClick="clickme2"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="#9b59b6"
+        android:textColor="#ecf0f1"
+        android:layout_marginRight="4dp"
+        android:layout_marginLeft="4dp" />
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Delete new Word"
+            android:id="@+id/button3"
+            android:onClick="clickme3"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="#9b59b6"
+            android:textColor="#ecf0f1"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp" />
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Navigate to list"
+            android:id="@+id/button4"
+            android:onClick="clickme4"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:textColor="#ecf0f1"
+            android:layout_marginLeft="4dp"
+            android:background="#9b59b6" />
+    </LinearLayout>
+</HorizontalScrollView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textview1"
+        android:padding="15dp"
+        android:background="@drawable/card"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Loading..."
+        android:textSize="17sp" />
+
+</LinearLayout>

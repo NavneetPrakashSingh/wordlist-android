@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Overall score of the quizzes taken are displayed when you click the button &apos;Show scores&apos;"
+        android:id="@+id/textView4"
+        android:textColor="#ff2c3e50"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ff2c3e50"
+        android:text="In case you haven&apos;t taken any quiz, no results are displayed."
+        android:id="@+id/textView6"
+        android:layout_margin="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ff2c3e50"
+        android:text="This will help you analyze which alphabets are your strength and which are your weakness."
+        android:id="@+id/textView7"
+        android:layout_margin="5dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show scores"
+        android:id="@+id/score"
+        android:background="#ff2c3e50"
+        android:textColor="@color/abc_primary_text_disable_only_material_dark"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="15dp"
+        android:onClick="score"
+        android:padding="10dp" />
+</LinearLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="peterRiver" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+
+        <item name="android:actionBarStyle">@style/MyActionBar3</item>
+
+
+        <!-- Support library compatibility -->
+        <item name="actionBarStyle">@style/MyActionBar3</item>
+
+    </style>
+    <color name="background3">#3498db</color>
+    <color name="foreground3">@android:color/white</color>
+    <style name="MyActionBar3" parent="@style/Widget.AppCompat.ActionBar">
+        <item name="android:titleTextStyle">@style/MyTitleTextStyle3</item>
+        <item name="android:background">@color/background3</item>
+
+        <!-- Support library compatibility -->
+        <item name="titleTextStyle">@style/MyTitleTextStyle3</item>
+        <item name="background">@color/background3</item>
+    </style>
+
+    <style name="MyTitleTextStyle3" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/foreground3</item>
+    </style>
+
+</resources>

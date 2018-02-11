@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CustomActionBarTheme1" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!--<item name="android:actionBarStyle">@style/MyActionBar</item>-->
+        <item name="android:background">#c0392b</item>
+<item name="android:textColor">#ecf0f1</item>
+        <item name="android:alertDialogTheme">@style/YourAlertDialogTheme</item>
+
+    </style>
+
+    <style name="YourAlertDialogTheme">
+       <item name="android:textColorPrimary">#ecf0f1</item>
+
+        <item name="android:textColor">#ecf0f1</item>
+   
+    <item name="android:windowIsFloating">true</item>
+   </style>
+</resources>

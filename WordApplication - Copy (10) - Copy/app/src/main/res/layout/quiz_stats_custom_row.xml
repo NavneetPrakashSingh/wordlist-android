@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/circle"
+    android:layout_width="250dp"
+    android:layout_height="250dp"
+    android:layout_gravity="center"
+
+
+    android:background="@drawable/drawable">
+
+    <TextView
+        android:id="@+id/bindingText"
+        android:textColor="@color/abc_primary_text_material_dark"
+        android:textSize="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:layout_alignTop="@+id/bindingText2"
+        android:layout_toLeftOf="@+id/bindingText1"
+        android:layout_toStartOf="@+id/bindingText1" />
+
+    <TextView
+        android:id="@+id/bindingText1"
+        android:textColor="@color/abc_primary_text_material_dark"
+        android:textSize="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="/"
+        android:layout_alignTop="@+id/bindingText"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/bindingText2"
+        android:textColor="@color/abc_primary_text_material_dark"
+        android:textSize="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/bindingText1"
+        android:layout_toEndOf="@+id/bindingText1" />
+</RelativeLayout>

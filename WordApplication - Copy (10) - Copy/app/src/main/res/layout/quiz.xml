@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Word List : Quiz Zone"
+        android:id="@+id/textView12"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="30dp"
+        android:background="#3498db"
+        android:textColor="#ecf0f1"
+        android:gravity="center_vertical|center_horizontal"
+        android:textSize="30sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Words"
+        android:id="@+id/word"
+        android:textSize="28sp"
+        android:textColor="#3498db"
+        android:textAlignment="gravity"
+        android:layout_marginLeft="5dp"
+        android:textStyle="bold"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="40dp"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="abandon"
+        android:id="@+id/opt1"
+        android:onClick="opt1click"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="#3498db"
+        android:textSize="18sp"
+        android:textAllCaps="false"
+        android:textColor="#ecf0f1" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="abandon"
+        android:onClick="opt2click"
+        android:id="@+id/opt2"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#3498db"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        android:textAllCaps="false"
+        android:textColor="#ecf0f1" />
+
+</LinearLayout>

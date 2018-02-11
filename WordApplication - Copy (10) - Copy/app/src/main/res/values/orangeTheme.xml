@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="orangeTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+
+        <item name="android:actionBarStyle">@style/MyActionBar6</item>
+
+
+        <!-- Support library compatibility -->
+        <item name="actionBarStyle">@style/MyActionBar6</item>
+
+    </style>
+    <color name="background6">#e67e22</color>
+    <color name="foreground6">@android:color/white</color>
+    <style name="MyActionBar6" parent="@style/Widget.AppCompat.ActionBar">
+        <item name="android:titleTextStyle">@style/MyTitleTextStyle6</item>
+        <item name="android:background">@color/background6</item>
+
+        <!-- Support library compatibility -->
+        <item name="titleTextStyle">@style/MyTitleTextStyle6</item>
+        <item name="background">@color/background6</item>
+    </style>
+
+    <style name="MyTitleTextStyle6" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/foreground6</item>
+    </style>
+
+</resources>

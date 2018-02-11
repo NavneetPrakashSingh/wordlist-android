@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="So you have parsed our word list , but didn&apos;t find the word you were looking for , no problem add it now in your word list before you forget it ! \n \n By using the Add Word button , you can store your own word list, so go on sky is the limit or should I say the memory in your device."
+        android:id="@+id/textView18"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="2dp"
+        android:textColor="#ff2c3e50" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Word"
+        android:id="@+id/button"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:background="#ff2c3e50"
+        android:textColor="#ecf0f1"
+        android:padding="7dp"
+
+        android:onClick="secondScreenClick" />
+</LinearLayout>

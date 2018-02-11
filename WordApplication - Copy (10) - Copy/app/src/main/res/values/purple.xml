@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="purple" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+
+        <item name="android:actionBarStyle">@style/MyActionBar4</item>
+
+
+        <!-- Support library compatibility -->
+        <item name="actionBarStyle">@style/MyActionBar4</item>
+
+    </style>
+    <color name="background4">#9b59b6</color>
+    <color name="foreground4">@android:color/white</color>
+    <style name="MyActionBar4" parent="@style/Widget.AppCompat.ActionBar">
+        <item name="android:titleTextStyle">@style/MyTitleTextStyle4</item>
+        <item name="android:background">@color/background4</item>
+
+        <!-- Support library compatibility -->
+        <item name="titleTextStyle">@style/MyTitleTextStyle4</item>
+        <item name="background">@color/background4</item>
+    </style>
+
+    <style name="MyTitleTextStyle4" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/foreground4</item>
+    </style>
+
+
+</resources>

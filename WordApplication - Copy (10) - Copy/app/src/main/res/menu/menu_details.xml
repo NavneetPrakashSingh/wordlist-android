@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.navneet.datawithlist.Details">
+    <item android:id="@+id/addwordtoquiz" android:title="Add word to quiz"
+        android:orderInCategory="100" app:showAsAction="never" />
+
+    <item android:id="@+id/deletewordfromquiz" android:title="Delete word from quiz"
+        android:orderInCategory="100" app:showAsAction="never" />
+
+    <item android:id="@+id/addwordtofavourite" android:title="Add word to favorite"
+        android:orderInCategory="100" app:showAsAction="never" />
+
+    <item android:id="@+id/deletewordfromfavourite" android:title="Delete word from favorite"
+        android:orderInCategory="100" app:showAsAction="never" />
+
+    <!--<item android:id="@+id/showme" android:title="Show favorite list"-->
+        <!--android:orderInCategory="100" app:showAsAction="never" />-->
+
+    <!--<item android:id="@+id/showquiz" android:title="Show Quiz list"-->
+        <!--android:orderInCategory="100" app:showAsAction="never" />-->
+</menu>
